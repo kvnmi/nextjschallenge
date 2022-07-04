@@ -85,6 +85,7 @@ export default function Home() {
         </div>
       </nav>
       <main className={styles.main}>
+        <h1>Updated</h1>
         {/* Top Section */}
         <section className="container flex flex-col-reverse items-start mx-auto md:flex-row">
           <div className="flex flex-col items-center pt-16 space-y-12 md:w-1/2 md:items-start">
