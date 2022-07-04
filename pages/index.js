@@ -85,7 +85,6 @@ export default function Home() {
         </div>
       </nav>
       <main className={styles.main}>
-        <h1>Updated</h1>
         {/* Top Section */}
         <section className="container flex flex-col-reverse items-start mx-auto md:flex-row">
           <div className="flex flex-col items-center pt-16 space-y-12 md:w-1/2 md:items-start">
@@ -158,36 +157,40 @@ export default function Home() {
 
         <section id="testimonials">
           <div className="container max-w-6xl flex flex-col mx-auto py-10 mt-16 items-center space-y-16">
-            <h1 className="text-3xl text-veryDarkBlue text-center font-bold md:text-4xl">
+            <h1 className="text-3xl text-veryDarkBlue font-bold md:text-4xl">
               What&apos;s Different About Manage?
             </h1>
             <div className="flex justify-between space-x-4">
-              <Card
-                alt={"Person 1"}
-                body={`“Manage has supercharged our team’s workflow. The ability to
+              <div className="hidden flex-col px-6 rounded-lg py-6 space-y-6 bg-veryLightGray items-center md:flex">
+                <Card
+                  alt={"Person 1"}
+                  body={`“Manage has supercharged our team’s workflow. The ability to
                   maintain visibility on larger milestones at all times keeps
                   everyone motivated.”`}
-                img={"/assets/img/avatar-anisha.png"}
-                title={"Anisha Lee"}
-              />
-              <Card
-                alt={"Person 2"}
-                body={`“Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”`}
-                img={"/assets/img/avatar-ali.png"}
-                title={"Ali Bravo"}
-                hidden={true}
-              />
-              <Card
-                alt={"Person 3"}
-                body={`“Manage has supercharged our team’s workflow. The ability to
-                maintain visibility on larger milestones at all times keeps
-                everyone motivated.”`}
-                img={"/assets/img/avatar-shanai.png"}
-                title={"Richard Watts"}
-                hidden={true}
-              />
+                  img={"/assets/img/avatar-anisha.png"}
+                  title={"Anisha Lee"}
+                />
+              </div>
+              <div className="flex flex-col px-6 rounded-lg py-6 space-y-6 bg-veryLightGray items-center">
+                <Card
+                  alt={"Person 2"}
+                  body={`“Manage has supercharged our team’s workflow. The ability to
+                  maintain visibility on larger milestones at all times keeps
+                  everyone motivated.”`}
+                  img={"/assets/img/avatar-ali.png"}
+                  title={"Ali BRAVO"}
+                />
+              </div>
+              <div className="hidden flex-col px-6 rounded-lg py-6 space-y-6 bg-veryLightGray items-center md:flex">
+                <Card
+                  alt={"Person 3"}
+                  body={`“Manage has supercharged our team’s workflow. The ability to
+                  maintain visibility on larger milestones at all times keeps
+                  everyone motivated.”`}
+                  img={"/assets/img/avatar-shanai.png"}
+                  title={"Richard Waats"}
+                />
+              </div>
             </div>
             <div className="flex justify-center md:justify-start">
               <a
