@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+// new style
 function index({ img, alt, title, body, hidden = false }) {
   const classStyle = !hidden
     ? "flex flex-col px-6 rounded-lg py-6 space-y-6 bg-veryLightGray items-center"
